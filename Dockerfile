@@ -12,4 +12,4 @@ RUN mkdir -p ~/build && \
     make clean && make && make install && \
     echo extension=swoole.so > /usr/local/etc/php/conf.d/swoole.ini 
 
-CMD php SCRIPTFILE
+CMD php ${SCRIPTFILE}
